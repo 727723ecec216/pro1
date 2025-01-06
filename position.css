@@ -1,0 +1,33 @@
+.
+p {
+    position: absolute;
+    left: 10px;
+    top: 150px;
+   
+
+  }
+  img {
+    position: absolute;
+    z-index: 1;
+    width: 70px;
+    offset: path('M 50 80 C 150 -20 250 180 350 80') 150px;
+    animation: moveImg 4s 1s 3;
+  }
+  svg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+  @keyframes moveImg {
+    100%  { offset-distance: 100%; }
+  }
+  span.x{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue; 
+    background-color: burlywood;
+  }
