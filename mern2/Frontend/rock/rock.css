@@ -1,0 +1,12 @@
+.container{
+    margin:20px;
+    border-radius: 30%;
+    width:50vw;
+    padding: 8px 10px;
+    margin-left: 30%;
+}
+.btn{
+    background-color: cornsilk;
+    color: black;
+    border-radius: 20%;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="port.css">
+    
+    
+</head>
+<body style="text-align: left;">
+    <div class="c1">
+        <a href="portfolio.html">HOME</a>
+        <a href="#c2">ABOUT</a>
+        <a href="#c4">SKILLS</a>
+
+    </div>
+    <div class="container1">
+        <div class="image">
+            
+            <img src="https://thumbs.dreamstime.com/b/young-girl-graduation-university-student-illustration-cartoon-people-education-327593215.jpg">
+        </div>
+        <div class="text">
+            <div class="section" id="section1">
+                
+                <h3>HELLO!!  THIS IS YAZHINI S
+                <br>ELECTRONICS AND COMUNICATION ENGINEER
+            </h3></div>
+        
+</div>
+         
+      </div><hr>
+      <div id="c2">
+        <div class="section" id="section1">
+        <h4>I'm currently doing my UG in ELECTRONICS AND COMMUNICATION ENGINEERING at Sri krishna college of engineering and technology located in coimbatore.
+            The reason why i chose this field is that, i have a great interest in physics and i wanted to do something related to it,and so i found a course that would relate physics and practical work.
+        I am really happy to pursue the course i wanted in one of the top most college in Tamilnadu</h4>
+      </div>
+    </div><hr>
+    <div id="c4">
+    <div class="skills-container">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">Java</div>
+            <div class="skill-card">HTML & CSS</div>
+            <div class="skill-card">C++</div>
+            <div class="skill-card">Python</div>
+        </div>
+    </div></div><hr>
+            <div class="contact-icons">
+                <a href="mailto:727723euec216@skcet.ac.in" title="Email">&#9993;</a> <!-- Email -->
+                <a href="https://github.com/727723ecec216" target="_blank" title="LinkedIn"> <i style="font-size:24px" class="fa">&#xf09b;</i></a> <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/yazhini-s-6a1263291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank" title="GitHub"><i style="font-size:24px" class="fa">&#xf08c;</i></a> <!-- GitHub -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            
+           
+            
+            </div>
+    </section>
+    <script>
+        const sections = document.querySelectorAll('.section');
+
+        function revealOnScroll() {
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                if (sectionTop < windowHeight * 0.8) {
+                    section.classList.add('show');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll(); // Trigger on page load
+    </script>
+    </body>
+</html>

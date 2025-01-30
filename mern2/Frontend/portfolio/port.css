@@ -1,0 +1,208 @@
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.fa-linkedin {  
+  background: #007bb5;  
+  color: white;  
+}  
+.c1{
+    background-color: grey;
+    overflow: hidden;
+}
+.c1 a{
+    float: left;
+    display:block;
+    text-align: center;
+    padding: 16px;
+    color: #f5f5dc;
+    text-decoration: none;
+}
+.c1 a:hover{
+    background-color:#8b89c1;
+}
+
+.container1 {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(45deg, #826f6c,#8b89c1, #2f3438);
+  background-size: 400% 400%;
+  animation: gradientAnimation 8s ease infinite;
+   }
+   
+   img {
+     max-width: 100%;
+     max-height:1000%;
+     border-radius: 100px;
+     float:right;
+   }
+   
+   .text {
+     padding-left: 10%;
+     width:90%;
+     text-decoration: none;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   }
+   ul{
+       list-style-type: none; 
+       font-size: 20px;
+   }
+   #c2{
+    padding: 8% 12%;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(45deg, #826f6c,#8b89c1, #2f3438);
+    background-size: 400% 400%;
+    animation: gradientAnimation 8s ease infinite;
+   
+   }
+   #c3{
+    padding: 8% 12%;
+    
+    
+  }
+   #c4{
+    padding: 8% 12%;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(45deg, #826f6c,#8b89c1, #2f3438);
+    background-size: 400% 400%;
+    animation: gradientAnimation 8s ease infinite;
+   }
+   #c5{
+    padding: 8% 12%;
+   }
+   .container {
+    display: flex;
+    
+    
+}
+
+.content-section {
+    margin-left: 20px;
+    
+}
+.box {
+    background:grey;
+    border-radius: 6px;
+    margin-top: 20px;
+    margin-right: 20px;
+
+    padding: 10px;
+    float: left;
+    width: 200px;
+    height: 140px;
+}
+.box img{
+  border-radius: 10px;;
+}
+.section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.9s ease-out, transform 0.8s ease-out;
+}
+.sec {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.9s ease-out, transform 0.8s ease-out;
+}
+
+.section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+body {
+  
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.skills-container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+}
+h2 {
+  color: #333;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+.skill-card {
+  background: grey;
+  color: white;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: transform 0.2s ease-in-out;
+}
+.skill-card:hover {
+  transform: scale(1.1);
+  background: #8b89c1;
+}
+.contact-icons {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+.contact-icons a {
+  color: white;
+  margin: 0 20px;
+  font-size: 28px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.contact-icons a:hover {
+  color: #007BFF;
+}

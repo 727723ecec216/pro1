@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rock.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ROCK PAPER SCISSOR</h1>
+        <p>CHOOSE YOUR CHOICE</p>
+        <button class="btn" onclick="play('ROCK')">🪨ROCK</button>
+        <button class="btn" onclick="play('PAPER')">🗞️PAPER</button>
+        <button class="btn" onclick="play('SCISSOR')">✂️SCISSOR</button>
+        <h2 id="res"></h2>
+    </div>
+    <script>
+        let a=["ROCK","PAPER","SCISSOR"]
+        function play(user){
+            let comp=a[Math.floor(Math.random()*a.length)];
+            let res=(comp===user)?"It's draw": ((comp==="ROCK"&&user==="PAPER")||
+            (comp==="PAPER"&&user==="SCISSOR")||(comp==="SCISSOR"&&user==="ROCK"))?"You won!!!":"Comp won!!!"
+            document.getElementById("res").innerText=res;
+        }
+    </script>
+</body>
+</html>
